@@ -31,7 +31,11 @@ The agent was tested against different AI players such as:
 - Aggressive Player: Looks at the next two possible moves and tries to capture the maximum number of enemy stones.
 - Alphabeta Player: Uses the Minimax algorithm (Depth<=2; Branching factor<=10) with alpha-beta pruning.
 - QLearningPlayer: Uses Q-Learning to learn Q values from practice games and make moves intelligently under different game conditions.
-- Championship Player: This is an excellent Little-Go player adapted from past top-performing agents.
 
 Results:
-My agent (Minimax algorithm with alpha-beta pruning) beats the Random, Greedy, Aggressive, Alphabeta, and QLearning players 10/10 times. Against the Championship player, my agent wins 6/10 times.
+My agent (Minimax algorithm with alpha-beta pruning) was tested against each player 20 times with the win rates listed below:
+- Random agent (19/20, 95% win rate)
+- Greedy agent (18/20, 90% win rate)
+- Aggressive agent (8/20, 16% win rate)
+- Alphabeta agent (10/20, 50% win rate)
+- Q-Learning agent (15/20, 75% win rate)
